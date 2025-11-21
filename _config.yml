@@ -73,3 +73,6 @@ plugins:
   - jekyll-readme-index
   - jemoji
   - jekyll-remote-theme
+
+readme_index:
+  enabled:          false
