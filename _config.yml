@@ -1,8 +1,7 @@
 # Configurations
-title:            Jekyll Gitbook
-longtitle:        Jekyll Gitbook
-author:           HE Tao
-email:            sighingnow@gmail.com
+title:            index
+author:           Anchovykim
+email:            anchovykim@protonmail.com
 description: >
   Build Jekyll site with the GitBook style.
 
@@ -22,7 +21,7 @@ toc:
   h_max:   3
 
 # customize the link favicon in header, will be {{site.baseurl}}/{{site.favicon_path}}
-favicon_path:     /assets/gitbook/images/favicon.ico
+#favicon_path:     /assets/gitbook/images/favicon.ico
 
 # markdown render engine.
 markdown:         kramdown
@@ -41,7 +40,7 @@ syntax_highlighter_style: colorful
 markdown_ext:             markdown,mkdown,mkdn,mkd,md
 
 # Permalinks
-permalink:                /:categories/:year-:month-:day-:title:output_ext
+permalink:                /:title:output_ext
 
 # Disqus comments
 # disqushandler:            sighingnow
@@ -50,17 +49,24 @@ exclude:
   - _drafts
 
 collections:
-  pages:
+  memo:
     output: false
     permalink: /:collection/:path/
-  others:
+  cs:
+    output: false
+    permalink: /:collection/:path/
+  ps:
+    output: false
+    permalink: /:collection/:path/
+  etc:
     output: false
     permalink: /:collection/:path/
 
 ordered_collections:
-  - posts
-  - pages
-  - others
+  - memo
+  - cs
+  - ps
+  - etc
 
 page_width: 800px
 
