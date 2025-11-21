@@ -1,8 +1,8 @@
 ---
-layout: page
-title: Welcome
+layout: home
+title: Home
 ---
 
-# Welcome
+# Contents
 
-Your content here.
+{% include toc.html %}
